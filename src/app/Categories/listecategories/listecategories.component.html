@@ -1,0 +1,25 @@
+<h1>Liste des Catégories</h1>
+<div class="container">
+    <button type="button" routerLink="/insertcat" class="btn btn-success">Ajouter</button>
+
+<table class="table table-striped">
+<thead>
+<tr>
+<th>NomCatégorie</th>
+<th>Image categories</th>
+<th>Modifier</th>
+<th>Supprimer</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let c of categories">
+
+<td>{{c.nomcategorie}}</td>
+<td> <img src={{c.imagecategorie}} width="70" height="70"></td>
+<td><button type="button" class="btn btn-primary">Modifier</button></td>
+<td><button type="button" (click)="suppcategories(c._id)" class="btn btn-danger">Supprimer</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+

@@ -1,0 +1,21 @@
+<form (ngsubmit)="ajoutcategories()">
+    <div class="mb-3">
+      <label for="nomcategorie" class="form-label">nomcategorie</label>
+      <input type="text" class="form-control" id="nomcategorie" name="nomcategorie" placeholder="nomcategorie" [(ngModel)]="categorie.nomcategorie">
+      
+    </div>
+  
+   
+    <div class="mb-3">
+        <label for="imagecategorie" class="form-label">Image</label>
+        <input type="file" class="form-control" id="imagecategorie" name="imagecategorie" placeholder="imagecategorie" [(ngModel)]="categorie.imagecategorie">
+        
+    </div>
+    {{categorie.nomcategorie}}
+    {{categorie.imagecategorie}}
+   
+
+    <button type="submit"  (click)="ajoutcategories()" class="btn btn-success">Ajouter</button>
+
+
+  </form>

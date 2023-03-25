@@ -1,0 +1,35 @@
+<form (ngSubmit)="modifarticle()">
+    <div class="mb-3">
+      <input type="text" class="form-control" id="reference" name="reference" placeholder="reference" [(ngModel)]="article.reference">
+      
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" id="designation" name="designation" placeholder="designation" [(ngModel)]="article.designation">
+        
+      </div>
+    <div class="mb-3">
+        <input type="number" class="form-control" id="prix" name="prix" placeholder="prix" [(ngModel)]="article.prix">
+        
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" id="marque" name="marque" placeholder="marque" [(ngModel)]="article.marque">
+        
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" id="qtestock" name="qtestock" placeholder="qtestock" [(ngModel)]="article.qtestock">
+        
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" id="imageart" name="imageart" placeholder="imageart" [(ngModel)]="article.imageart">
+        
+    </div>
+    {{article.reference}}
+    {{article.prix}}
+    {{article.imageart}}
+    {{article.designation}}
+    {{article.qtestock}}
+<div>
+    <button type="submit"  class="btn btn-success">Ajouter</button>
+</div>
+
+  </form>

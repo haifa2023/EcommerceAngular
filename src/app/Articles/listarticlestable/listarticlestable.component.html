@@ -1,0 +1,34 @@
+<h1>Liste des Articles Tables</h1>
+<div class="container">
+    <button type="button" class="btn btn-success" routerLink="/insertart">Nouveau</button>
+
+<table *ngIf="articles" datatable class="table table-hover table-striped table-bordred">
+
+
+    
+<thead>
+<tr>
+<th>reference</th>
+<th>designation</th>
+<th>qtestock</th>
+<th>prix</th>
+<th>marque</th>
+<th>Image articles</th>
+
+<th>Modifier</th>
+
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let c of articles">
+<td>{{c.reference}}</td>
+<td>{{c.designation}}</td>
+<td>{{c.qtestock}}</td>
+<td>{{c.prix}}</td>
+<td>{{c.marque}}</td>
+<td> <img src={{c.imageart}} width="70" height="70"></td>
+<td><button type="button" class="btn btn-primary">Modifier</button></td>
+</tr>
+</tbody>
+</table>
+</div>
